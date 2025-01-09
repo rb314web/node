@@ -7,4 +7,6 @@ app.get( '/', (req, res) => {
     res.send('Node ddd')
 })
 
-app.listen(port)
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+}); 
